@@ -1,7 +1,7 @@
 import shutil
 from pathlib import Path
 
-def copy_photos_to_destin(photos: list[Path], destin: Path):
+def copy_photos_to_destin(photos: list[Path], destin: Path) -> None:
     destin.mkdir(parents=True, exist_ok=True)
 
     for photo in photos:
